@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0C1C;
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.header-img {
+    width: 100%;
+    display: block;
+}
+
+.content {
+    background: #1B1937;
+    width: 327px;
+    border-radius: 8px;
+    overflow-x: hidden;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 32px;
+    text-align: center;
+    background: #1B1937;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+}
+
+.hight {
+    color: #AB5CDB;
+}
+
+.description {
+    color: white;
+    font-size: 15px;
+    padding-top: 8px;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    color: white;
+    padding-top: 40px;
+}
+
+.stat-number {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+}
+
+.stat-label {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.imag-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #AB5CDB;
+    opacity: 0.5;
+}
+
+@media (width > 375px) {
+    .content {
+        flex-direction: column;
+        width: 600px;
+        margin: auto;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+@media (width > 1000px) {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 900px;
+        margin: auto;
+    }
+
+    .header-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card {
+        width: 50%;
+        text-align: left;
+        padding: 64px;
+    }
+
+    .stats {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 24px;
+
+    }
+
+    .description {
+        margin-top: 16px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 1050px) {
+
+} */
